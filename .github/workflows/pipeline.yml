@@ -18,5 +18,9 @@ jobs:
       with:
         node-version: 18.*
         cache: 'npm'
-    - run: npm install
-    - run: npm run test:unit
+    - name: Dependencies install
+      run: npm install
+    - name: Executing unit tests
+      run: npm run test:unit
+    - name: Dysplaing Softuni username
+      run: npm run display:username
