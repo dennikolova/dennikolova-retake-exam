@@ -1,5 +1,5 @@
 
-name: Library application - automatation CI/CD 
+name: Library application - implementation CI
 
 on:
   push:
@@ -9,10 +9,10 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repo  
+      uses: actions/checkout@v3
     - name: Use Node.js 18.*
       uses: actions/setup-node@v3
       with:
